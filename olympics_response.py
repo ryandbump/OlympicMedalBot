@@ -12,8 +12,9 @@ r.login()
 
 def check_condition(s):
     medals = ['gold', 'silver', 'bronze']
+    keys = ['usa', 'america', 'american', 'united states']
     title = s.title.lower()
-    if any(string in title for string in medals) and 'usa' in title:
+    if any(string in title for string in medals) and any(string in title for string in keys):
         return True
 
 def bot_action(s):
