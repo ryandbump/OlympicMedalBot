@@ -64,7 +64,8 @@ def writeIdToFile(id):
 
 
 while True:
-    posts = praw.helpers.submission_stream(r, "all")
+    posts = praw.helpers.submission_stream(r, "news")
+    posts += praw.helpers.submission_stream(r, "olympics")
     repliedTo = []
 
     try:
