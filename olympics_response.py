@@ -11,7 +11,7 @@ r.login()
 
 
 def check_condition(s):
-    medals = ['gold', 'silver', 'bronze']
+    medals = ['gold', 'silver', 'bronze', 'medal']
     keys = ['usa', 'america', 'american', 'united states']
     title = s.title.lower()
     if any(string in title for string in medals) and any(string in title for string in keys):
