@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-UA = 'USA Olympics Medal Counter. Contact me at /u/theDauntingGoat'
+UA = 'USA Olympics Medal Counter.'
 
 r = praw.Reddit(UA)
 r.login()
